@@ -25,15 +25,15 @@ class PokemonList extends Component {
   
   renderPokemons() {
     if(!this.state.fetched) {
-      return <div>Loading...</div>
+      return null
     }
     return (
       this.state.pokemons.map((pokemon, index) => {
-        console.log(pokemon.name)
         return (
           <PokemonCard
             key={pokemon.name}
-            id={index}
+            id={index + 1}
+            image={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index + 1}.png`}
             pokemon={pokemon}
           />
         );
@@ -42,7 +42,6 @@ class PokemonList extends Component {
   }
 
   render() {
-    console.log(this.state.pokemons)
     return (
       <div className="ui container">
         <div className="ui grid">
