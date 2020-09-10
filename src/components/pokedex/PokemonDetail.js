@@ -86,13 +86,11 @@ class PokemonDetail extends Component {
 
   renderPokemonTypes() {
     return (
-      this.state.types.map(el => {
+      this.state.types.map((el, index) => {
         return (
-          <React.Fragment>
-          <div className="ui label" style={{backgroundColor: TYPE_COLORS[el.type.name], borderColor: TYPE_COLORS[el.type.name]}}>
+          <div key={index} className="ui label" style={{backgroundColor: TYPE_COLORS[el.type.name], borderColor: TYPE_COLORS[el.type.name]}}>
             {el.type.name}
           </div>
-          </React.Fragment>
         );
       })
     );
@@ -104,7 +102,7 @@ class PokemonDetail extends Component {
     return (
       stats.map(el => {
         return (
-          <React.Fragment>
+          <React.Fragment key={el.stat.name}>
             <div className="four wide column" style={{padding: '5px 0'}}>
               <b>{el.stat.name}</b>
             </div>
@@ -126,7 +124,7 @@ class PokemonDetail extends Component {
     return (
       this.state.eggGroups.map(group => {
         return (
-          <div className="item">{group.name}</div>
+          <div key={group.name} className="item">{group.name}</div>
         ); 
       })
     );
@@ -136,7 +134,7 @@ class PokemonDetail extends Component {
     return (
       this.state.abilities.map(el => {
         return (
-          <div className="item">{el.ability.name}</div>
+          <div key={el.ability.name} className="item">{el.ability.name}</div>
         ); 
       })
     );
@@ -191,8 +189,15 @@ class PokemonDetail extends Component {
 
   renderPokemon() {
     const pokemon = this.state;
+    const loaderStyles = {
+      position: 'absolute',
+      top: '30%',
+      left: '50%'
+    }
     if(!this.state.name){
-      return null
+      return (
+        <div class="ui massive active centered inline loader" style={loaderStyles}></div>
+      );
     }
     return (
       <React.Fragment>
