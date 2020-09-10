@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/react-pokedex/static/js/main.b8b008ad.chunk.js",
-    "main.js.map": "/react-pokedex/static/js/main.b8b008ad.chunk.js.map",
-    "runtime-main.js": "/react-pokedex/static/js/runtime-main.f27a760f.js",
-    "runtime-main.js.map": "/react-pokedex/static/js/runtime-main.f27a760f.js.map",
-    "static/js/2.24981384.chunk.js": "/react-pokedex/static/js/2.24981384.chunk.js",
-    "static/js/2.24981384.chunk.js.map": "/react-pokedex/static/js/2.24981384.chunk.js.map",
-    "index.html": "/react-pokedex/index.html",
-    "precache-manifest.7b6b11b4e7c88f8fe4683fa9d5044d52.js": "/react-pokedex/precache-manifest.7b6b11b4e7c88f8fe4683fa9d5044d52.js",
-    "service-worker.js": "/react-pokedex/service-worker.js",
-    "static/js/2.24981384.chunk.js.LICENSE.txt": "/react-pokedex/static/js/2.24981384.chunk.js.LICENSE.txt",
-    "static/media/pokedex-logo.png": "/react-pokedex/static/media/pokedex-logo.6f1fd446.png"
+    "main.js": "/React-Pokedex/static/js/main.b8b008ad.chunk.js",
+    "main.js.map": "/React-Pokedex/static/js/main.b8b008ad.chunk.js.map",
+    "runtime-main.js": "/React-Pokedex/static/js/runtime-main.88c23103.js",
+    "runtime-main.js.map": "/React-Pokedex/static/js/runtime-main.88c23103.js.map",
+    "static/js/2.24981384.chunk.js": "/React-Pokedex/static/js/2.24981384.chunk.js",
+    "static/js/2.24981384.chunk.js.map": "/React-Pokedex/static/js/2.24981384.chunk.js.map",
+    "index.html": "/React-Pokedex/index.html",
+    "precache-manifest.d82be4c9299e81a171c74707ca971a86.js": "/React-Pokedex/precache-manifest.d82be4c9299e81a171c74707ca971a86.js",
+    "service-worker.js": "/React-Pokedex/service-worker.js",
+    "static/js/2.24981384.chunk.js.LICENSE.txt": "/React-Pokedex/static/js/2.24981384.chunk.js.LICENSE.txt",
+    "static/media/pokedex-logo.png": "/React-Pokedex/static/media/pokedex-logo.6f1fd446.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.f27a760f.js",
+    "static/js/runtime-main.88c23103.js",
     "static/js/2.24981384.chunk.js",
     "static/js/main.b8b008ad.chunk.js"
   ]
